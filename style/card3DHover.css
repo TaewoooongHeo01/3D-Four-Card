@@ -1,0 +1,86 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 3000px;
+}
+
+.cardBox {
+  position: relative;
+  width: 385px;
+  height: 250px;
+  transform-style: preserve-3d;
+  transform: rotatex(45deg) rotateZ(40deg);
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  transition: 0.5s;
+  transform-origin: right bottom;
+}
+.card img {
+  position: absolute;
+  top: 30px;
+  width: 120px;
+  height: 120px;
+}
+.card h3 {
+  position: absolute;
+  left: 20px;
+  bottom: 80px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 1000;
+}
+.card span {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.economy_class {
+  background: linear-gradient(-200deg, #cd83ff, #c060ff, #b545ff, #a724ff);
+  z-index: 1;
+  transform: translateZ(175px) rotateX(-8deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+.economy_class:hover {
+  transform: translateZ(175px) rotateZ(-20deg) rotateX(-25deg);
+}
+
+.premium_economy_class {
+  background: linear-gradient(-200deg, #899bfc, #5c75ff, #4c67ff, #1b3dff);
+  transform: rotateX(-6deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.premium_economy_class:hover {
+  transform: rotateZ(-25deg) rotateX(-25deg) translateX(-35px);
+}
+
+.business_class {
+  background: linear-gradient(-200deg, #6dbdff, #50b0ff, #2da1ff, #0990ff);
+  z-index: 3;
+  transform: translateZ(-200px) rotateX(-6deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+.business_class:hover {
+  transform: translateZ(-200px) rotateZ(-25deg) rotateX(-25deg) translateX(-35px);
+}
+
+.first_class {
+  background: linear-gradient(-200deg, #2c2496, #1d1863, #1a1558);
+  z-index: 4;
+  transform: translateZ(-400px) rotateX(-6deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+}
+.first_class:hover {
+  transform: translateZ(-400px) rotateZ(-25deg) rotateX(-25deg) translateX(-35px);
+}/*# sourceMappingURL=card3DHover.css.map */
